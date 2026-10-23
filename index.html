@@ -19,20 +19,27 @@ p, li { color: var(--ink); }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 a { color: var(--accent); }
+/* cláusula que limita direito: com destaque, como pede o CDC (art. 54, §4º) */
+.highlight { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: var(--bg); padding: 8px; }
 nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
 </style>
 </head>
 <body>
-<main>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<main id="conteudo">
 <a class="brand" href="index.html">LUME</a>
 <h1>Documentos do LUME</h1>
-<p class="version">Versão de 21 de outubro de 2026, revisão 5 (2026-10-21.5)</p>
-<ul><li><a href="privacidade.html">Política de Privacidade</a> — Quais dados o LUME trata, para quê, onde eles ficam e como você controla tudo isso.</li><li><a href="termos.html">Termos de Uso</a> — As regras para usar o LUME, o aplicativo e a assinatura LUME Premium.</li><li><a href="aviso-saude.html">Aviso de saúde e precisão</a> — O que o LUME é, o que ele não é e por que os números podem errar.</li></ul>
-<nav>
+<p class="version">Versão de 23 de outubro de 2026 (2026-10-23)</p>
+<ul><li><a href="privacidade.html">Política de Privacidade</a> — Quais dados o LUME trata, para quê, onde eles ficam e como você controla tudo isso.</li><li><a href="termos.html">Termos de Uso</a> — As regras para usar o LUME, o aplicativo, a assinatura LUME Premium e o anel e a pulseira LUME.</li><li><a href="aviso-saude.html">Aviso de saúde e precisão</a> — O que o LUME é, o que ele não é e por que os números podem errar.</li></ul>
+<nav aria-label="Documentos do LUME">
 <a href="termos.html">Termos de Uso</a>
 <a href="privacidade.html">Política de Privacidade</a>
 <a href="aviso-saude.html">Aviso de saúde e precisão</a>
 <a href="suporte.html">Suporte</a>
+<a href="suporte.html#acessibilidade"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="vertical-align:-3px"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M10 7h4v6h4l2 6h-2l-1.6-4H10z M9 10.5A6 6 0 1 0 15.5 19" fill="none" stroke="currentColor" stroke-width="2"/></svg> Acessibilidade</a>
 </nav>
 <p class="version">LUME WEARABLES LTDA · CNPJ 69.685.463/0001-30<br>Rua Samuel Heusi, 463, sala 402, box 651, Centro, Itajaí/SC, CEP 88301-320 · <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> · (47) 98852-3940</p>
 </main>

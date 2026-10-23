@@ -19,33 +19,40 @@ p, li { color: var(--ink); }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 a { color: var(--accent); }
+/* cláusula que limita direito: com destaque, como pede o CDC (art. 54, §4º) */
+.highlight { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: var(--bg); padding: 8px; }
 nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
 </style>
 </head>
 <body>
-<main>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<main id="conteudo">
 <a class="brand" href="index.html">LUME</a>
 <h1>Aviso de saúde e precisão</h1>
 <p class="lead">O que o LUME é, o que ele não é e por que os números podem errar.</p>
-<p class="version">Versão de 21 de outubro de 2026, revisão 5 (2026-10-21.5)</p>
+<p class="version">Versão de 23 de outubro de 2026 (2026-10-23)</p>
 <h2>O LUME é um app de bem-estar</h2>
-<p>O LUME ajuda você a acompanhar hábitos, sono, atividade e alimentação para se conhecer melhor. Ele não é um dispositivo médico, não é um serviço de saúde e não faz diagnóstico, tratamento ou prevenção de nenhuma doença.</p>
+<p class="highlight"><strong>O LUME ajuda você a acompanhar hábitos, sono, atividade e alimentação para se conhecer melhor. Ele não é um dispositivo médico, não é um serviço de saúde e não faz diagnóstico, tratamento ou prevenção de nenhuma doença.</strong></p>
 <p>Nada no app substitui a avaliação de médico, nutricionista, educador físico ou outro profissional de saúde. Antes de mudar dieta, treino, sono ou medicação, fale com um profissional.</p>
 <h2>O anel, a pulseira e o celular podem errar</h2>
-<p>Os sensores de anéis, pulseiras e celulares medem de forma indireta e estimada. Os números podem ter erros, falhas ou lacunas e não têm precisão clínica.</p>
+<p class="highlight"><strong>Os sensores de anéis, pulseiras e celulares medem de forma indireta e estimada. Os números podem ter erros, falhas ou lacunas e não têm precisão clínica.</strong></p>
 <ul><li>A leitura muda com o encaixe no dedo ou no pulso, o movimento, a cor e a temperatura da pele, tatuagens, suor, a bateria e o modelo do aparelho.</li><li>Frequência cardíaca, variabilidade (VFC), temperatura, estresse, estágios do sono, passos e calorias são estimativas.</li><li>Índices do app, como prontidão, recuperação e idade de saúde, são cálculos de bem-estar a partir dessas estimativas, não avaliações médicas.</li><li>Um valor fora do comum pode ser erro do sensor. Um valor normal não significa que está tudo bem com a sua saúde.</li></ul>
 <h2>Inteligência artificial pode errar</h2>
-<p>O Lume Coach e a análise de refeições usam inteligência artificial. As respostas podem conter erros, omissões ou informações inventadas, e as calorias e nutrientes estimados por foto ou descrição são aproximados. Não use essas respostas como orientação médica ou nutricional.</p>
+<p class="highlight"><strong>O Lume Coach e a análise de refeições usam inteligência artificial. As respostas podem conter erros, omissões ou informações inventadas, e as calorias e nutrientes estimados por foto ou descrição são aproximados. Não use essas respostas como orientação médica ou nutricional.</strong></p>
 <h2>Ciclo menstrual</h2>
-<p>O acompanhamento do ciclo é só para autoconhecimento. Ele não é método contraceptivo, não serve para evitar ou planejar gravidez e não detecta condições de saúde.</p>
+<p class="highlight"><strong>O acompanhamento do ciclo é só para autoconhecimento. Ele não é método contraceptivo, não serve para evitar ou planejar gravidez e não detecta condições de saúde.</strong></p>
 <h2>Emergências</h2>
 <p>O LUME não monitora emergências, não emite alertas médicos e não avisa ninguém se algo acontecer com você. Não espere pelo app se sentir dor no peito, falta de ar, desmaio, confusão ou qualquer sinal de alerta.</p>
 <p>Em emergência, ligue 192 (SAMU). Se estiver em sofrimento emocional, o CVV atende 24 horas pelo 188, ligação gratuita, e em cvv.org.br.</p>
-<nav>
+<nav aria-label="Documentos do LUME">
 <a href="termos.html">Termos de Uso</a>
 <a href="privacidade.html">Política de Privacidade</a>
 <a href="aviso-saude.html">Aviso de saúde e precisão</a>
 <a href="suporte.html">Suporte</a>
+<a href="suporte.html#acessibilidade"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="vertical-align:-3px"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M10 7h4v6h4l2 6h-2l-1.6-4H10z M9 10.5A6 6 0 1 0 15.5 19" fill="none" stroke="currentColor" stroke-width="2"/></svg> Acessibilidade</a>
 </nav>
 <p class="version">LUME WEARABLES LTDA · CNPJ 69.685.463/0001-30<br>Rua Samuel Heusi, 463, sala 402, box 651, Centro, Itajaí/SC, CEP 88301-320 · <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> · (47) 98852-3940</p>
 </main>

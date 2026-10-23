@@ -19,54 +19,79 @@ p, li { color: var(--ink); }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 a { color: var(--accent); }
+/* cláusula que limita direito: com destaque, como pede o CDC (art. 54, §4º) */
+.highlight { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: var(--bg); padding: 8px; }
 nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
 </style>
 </head>
 <body>
-<main>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<main id="conteudo">
 <a class="brand" href="index.html">LUME</a>
 <h1>Termos de Uso</h1>
-<p class="lead">As regras para usar o LUME, o aplicativo e a assinatura LUME Premium.</p>
-<p class="version">Versão de 21 de outubro de 2026, revisão 5 (2026-10-21.5)</p>
+<p class="lead">As regras para usar o LUME, o aplicativo, a assinatura LUME Premium e o anel e a pulseira LUME.</p>
+<p class="version">Versão de 23 de outubro de 2026 (2026-10-23)</p>
 <h2>1. Quem somos e aceite</h2>
 <p>O LUME é oferecido por LUME WEARABLES LTDA, inscrita no CNPJ 69.685.463/0001-30, com sede na Rua Samuel Heusi, 463, sala 402, box 651, Centro, Itajaí/SC, CEP 88301-320 (contato: <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>, telefone (47) 98852-3940). Ao tocar em &quot;Aceitar e continuar&quot; você declara que leu e concorda com estes Termos e com a Política de Privacidade. Se não concordar, não use o app.</p>
+<p>Os trechos em destaque limitam direitos ou trazem avisos importantes. Leia com atenção.</p>
 <h2>2. Idade mínima</h2>
-<p>O LUME é destinado apenas a maiores de 18 anos. Ao usar o app você declara ter 18 anos ou mais. Se soubermos que um menor está usando o app, a conta e os dados serão excluídos.</p>
+<p class="highlight"><strong>O LUME é destinado apenas a maiores de 18 anos. Ao usar o app você declara ter 18 anos ou mais.</strong></p>
+<p>Se houver indícios de que uma conta é usada por menor de 18 anos, podemos suspendê-la e pedir a confirmação da idade. Se a suspensão for um engano, você pode contestar pelo e-mail <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>, e respondemos em até 5 dias. Confirmado que a conta é de menor, ela e os dados serão excluídos.</p>
 <h2>3. O que o LUME é e o que ele não é</h2>
-<p>O LUME é um aplicativo de bem-estar e autoconhecimento. Ele não é dispositivo médico, não é serviço de saúde e não diagnostica, trata ou previne doenças. As informações têm caráter informativo e educativo.</p>
+<p class="highlight"><strong>O LUME é um aplicativo de bem-estar e autoconhecimento. Ele não é dispositivo médico, não é serviço de saúde e não diagnostica, trata ou previne doenças. As informações têm caráter informativo e educativo.</strong></p>
 <p>O Aviso de saúde e precisão, aceito no primeiro uso, faz parte destes Termos.</p>
 <h2>4. Precisão das medições e estimativas</h2>
 <p>Os dados vêm de sensores de anéis, pulseiras, do celular, do Apple Saúde e da Conexão Saúde (Health Connect), e de cálculos do app. Eles são estimativas: podem ter erros, falhas e lacunas e não têm precisão clínica. A precisão depende do aparelho, do encaixe, do movimento e de outras condições fora do nosso controle.</p>
-<p>Não garantimos que os números estejam corretos, completos ou disponíveis a todo momento. Não use o LUME para decidir sobre remédios, doses, tratamentos, treinos de risco ou para monitorar condição de saúde.</p>
+<p class="highlight"><strong>Não garantimos que os números estejam corretos, completos ou disponíveis a todo momento. Não use o LUME para decidir sobre remédios, doses, tratamentos, treinos de risco ou para monitorar condição de saúde.</strong></p>
 <h2>5. Inteligência artificial</h2>
-<p>O Lume Coach e a análise de refeições usam inteligência artificial de terceiros. As respostas podem conter erros e não são orientação médica, nutricional ou de treino. Você é responsável por avaliar o que fazer com elas e deve procurar um profissional sempre que for mudar algo na sua saúde.</p>
+<p class="highlight"><strong>O Lume Coach e a análise de refeições usam inteligência artificial de terceiros. As respostas podem conter erros e não são orientação médica, nutricional ou de treino. Você é responsável por avaliar o que fazer com elas e deve procurar um profissional sempre que for mudar algo na sua saúde.</strong></p>
 <h2>6. Emergências</h2>
-<p>O LUME não é serviço de emergência e não monitora sua saúde em tempo real. Em emergência, ligue 192 (SAMU). Se estiver em sofrimento emocional, o CVV atende 24 horas pelo 188, ligação gratuita, e em cvv.org.br.</p>
+<p class="highlight"><strong>O LUME não é serviço de emergência e não monitora sua saúde em tempo real. Em emergência, ligue 192 (SAMU). Se estiver em sofrimento emocional, o CVV atende 24 horas pelo 188, ligação gratuita, e em cvv.org.br.</strong></p>
 <h2>7. Sua conta e suas responsabilidades</h2>
 <ul><li>Informar dados verdadeiros, inclusive a data de nascimento.</li><li>Manter as credenciais de acesso à sua conta em segurança.</li><li>Usar o anel ou a pulseira conforme o manual do fabricante.</li><li>Respeitar seus limites físicos e procurar orientação profissional antes de mudanças importantes.</li><li>Não usar o app para fins ilegais, nem tentar acessar dados de outras pessoas ou interferir no serviço.</li></ul>
 <h2>8. LUME Premium (assinatura)</h2>
 <p>A aba Nutrição e o Lume Coach fazem parte do LUME Premium. Tudo o que o anel ou a pulseira mede continua gratuito.</p>
-<ul><li>Quando a assinatura estiver disponível, os planos e preços válidos aparecem na tela de compra da App Store ou do Google Play, conforme seu aparelho. Eles podem variar por país e impostos.</li><li>Não há período de teste grátis.</li><li>A cobrança é feita pela loja do seu aparelho ao confirmar a compra.</li><li>A assinatura renova automaticamente pelo mesmo valor e período, a menos que seja cancelada até 24 horas antes do fim do período atual.</li><li>Você pode cancelar nas assinaturas da App Store ou do Google Play, conforme seu aparelho, ou acessar Perfil › LUME Premium › Gerenciar assinatura. O cancelamento interrompe a próxima renovação; o acesso continua até o fim do período já pago.</li><li>Pedidos de reembolso são feitos pela loja em que a compra ocorreu, segundo as regras dela, sem prejuízo dos seus direitos como consumidor.</li><li>Se o preço mudar, avisaremos com antecedência e a loja pedirá sua confirmação quando a lei ou as regras dela exigirem.</li></ul>
+<ul><li>Quando a assinatura estiver disponível, os planos e preços válidos aparecem na tela de compra da App Store ou do Google Play, conforme seu aparelho. Eles podem variar por país e impostos.</li><li>Não há período de teste grátis.</li><li>A cobrança é feita pela loja do seu aparelho ao confirmar a compra.</li><li>A assinatura renova automaticamente pelo mesmo valor e período, a menos que seja cancelada até 24 horas antes do fim do período atual. A data da próxima renovação aparece em Perfil › LUME Premium.</li><li>Você pode cancelar nas assinaturas da App Store ou do Google Play, conforme seu aparelho, ou acessar Perfil › LUME Premium › Gerenciar assinatura. O cancelamento interrompe a próxima renovação; o acesso continua até o fim do período já pago.</li><li>Se o preço mudar, avisaremos com antecedência e a loja pedirá sua confirmação quando a lei ou as regras dela exigirem.</li></ul>
+<p>Direito de arrependimento: você pode desistir da assinatura em até 7 dias da contratação e receber de volta o que pagou (Código de Defesa do Consumidor, art. 49). Peça o reembolso à loja em que comprou ou escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>: confirmamos o recebimento do pedido na hora e ajudamos você a concluí-lo com a loja. Fora desse prazo, os reembolsos seguem as regras da loja, sem prejuízo dos seus direitos como consumidor.</p>
 <p>O limite de uso da IA (hoje 15 usos por dia, somando Nutrição e Coach) existe para manter o serviço estável e pode ser ajustado com aviso prévio.</p>
-<h2>9. Comunidade</h2>
-<p>Na Comunidade você pode publicar, comentar e participar de clubes. Você é responsável pelo que publica e não pode publicar:</p>
-<ul><li>conteúdo ilegal, violento, sexual, discriminatório, de ódio ou assédio;</li><li>dados de outras pessoas sem autorização;</li><li>promessas de cura, venda de remédios, suplementos ou serviços de saúde;</li><li>spam, golpes ou propaganda não autorizada.</li></ul>
-<p>Você pode denunciar e bloquear pessoas e publicações. Podemos remover conteúdo e suspender contas que violem estas regras. Denúncias também podem ser enviadas para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>.</p>
-<h2>10. Disponibilidade e mudanças no serviço</h2>
+<h2>9. Anel e pulseira LUME</h2>
+<p>Os anéis e as pulseiras vendidos com a marca LUME são importados por LUME WEARABLES LTDA, que responde por eles como fornecedora (Código de Defesa do Consumidor, arts. 12 e 18).</p>
+<ul><li>Garantia legal de 90 dias contra defeitos, contados da entrega (art. 26, II), além de qualquer garantia adicional informada na compra.</li><li>Para acionar a garantia, escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou ligue para (47) 98852-3940 com o número do pedido e a descrição do problema. Temos até 30 dias para resolver; se não resolvermos, você escolhe entre a troca, a devolução do valor pago ou o abatimento do preço (art. 18, §1º).</li><li>Comprou pela internet ou por telefone? Você pode desistir em até 7 dias do recebimento e receber de volta o valor pago, inclusive o frete (art. 49).</li><li>Siga o manual que acompanha o aparelho: use só o carregador indicado, não use sobre pele ferida e tire o aparelho se notar irritação, aquecimento, inchaço da bateria ou dano.</li></ul>
+<h2>10. Comunidade</h2>
+<p>Na Comunidade você pode publicar, comentar e participar de clubes e eventos. Você é responsável pelo que publica e não pode publicar:</p>
+<ul><li>conteúdo ilegal, violento, sexual, discriminatório, de ódio ou assédio;</li><li>qualquer conteúdo que envolva exploração, abuso ou sexualização de crianças e adolescentes;</li><li>incentivo a automutilação, suicídio, transtornos alimentares ou uso de substâncias;</li><li>dados ou imagens de outras pessoas sem autorização;</li><li>promessas de cura, venda de remédios, suplementos ou serviços de saúde;</li><li>spam, golpes ou propaganda não autorizada.</li></ul>
+<h2>11. Denúncias, remoção de conteúdo e recurso</h2>
+<p>Qualquer pessoa pode denunciar um perfil, publicação, comentário, mensagem, clube ou evento pelo botão Denunciar do app, ou por e-mail para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>, indicando onde está o conteúdo e o motivo. Denúncias anônimas por e-mail não são aceitas quando a lei exige a identificação de quem denuncia.</p>
+<p>Analisamos as denúncias e removemos o conteúdo ilegal ou contrário a estes Termos, sem precisar de ordem judicial. Conteúdo de exploração ou abuso sexual, aliciamento ou risco a criança ou adolescente é removido com prioridade, preservado e comunicado às autoridades competentes, como a lei exige (Lei 15.211/2025, art. 27).</p>
+<p>Quando removermos algo que você publicou ou suspendermos sua conta, avisaremos o motivo e se a decisão foi tomada por uma pessoa ou de forma automática. Você pode pedir revisão em até 30 dias pelo e-mail <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>; respondemos de forma fundamentada em até 15 dias.</p>
+<p>Denúncias falsas ou em massa para perseguir ou silenciar alguém são proibidas e podem levar à suspensão da conta, com o mesmo direito de recurso.</p>
+<p>Você pode bloquear pessoas a qualquer momento. Podemos remover conteúdo e suspender ou encerrar contas que violem estas regras.</p>
+<h2>12. Propriedade intelectual e o que você publica</h2>
+<p>A marca LUME, o app, os textos, as imagens, os cálculos e o design são de LUME WEARABLES LTDA ou licenciados a ela. Você pode usar o app para uso pessoal e não comercial; não pode copiar, revender ou tentar extrair o código, salvo quando a lei permitir.</p>
+<p>O que você publica continua seu. Para que a Comunidade funcione, você nos concede uma licença gratuita, não exclusiva e limitada para armazenar, adaptar o formato e exibir esse conteúdo ao público que você escolheu, enquanto ele estiver publicado. Não usamos o seu conteúdo em publicidade sem a sua autorização específica.</p>
+<p>Ao publicar fotos, você declara ter os direitos sobre elas e a autorização das pessoas que aparecem (Código Civil, art. 20).</p>
+<h2>13. Disponibilidade e mudanças no serviço</h2>
 <p>Trabalhamos para manter o LUME funcionando, mas ele pode ficar indisponível por manutenção, falhas de terceiros (lojas, provedores de nuvem e de IA, fabricantes dos aparelhos) ou motivos técnicos. Recursos podem mudar, e mudanças relevantes serão comunicadas no app.</p>
-<h2>11. Responsabilidade</h2>
-<p>Respondemos pelo serviço nos termos do Código de Defesa do Consumidor. Como o LUME trabalha com estimativas e não é serviço de saúde, não respondemos por decisões de saúde, dieta, treino ou medicação tomadas com base apenas nas informações do app, nem por falhas dos aparelhos de terceiros ou por uso em desacordo com estes Termos e com o Aviso de saúde e precisão.</p>
-<h2>12. Privacidade</h2>
+<h2>14. Responsabilidade</h2>
+<p>Respondemos pelo serviço e pelos aparelhos que vendemos nos termos do Código de Defesa do Consumidor. Nada nestes Termos afasta direitos que a lei garante a você.</p>
+<p class="highlight"><strong>Como o LUME trabalha com estimativas e não é serviço de saúde, não respondemos por decisões de saúde, dieta, treino ou medicação tomadas com base apenas nas informações do app, nem por uso em desacordo com estes Termos, com o manual do aparelho ou com o Aviso de saúde e precisão.</strong></p>
+<h2>15. Atendimento</h2>
+<p>Pelo e-mail <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou pelo telefone (47) 98852-3940. Confirmamos o recebimento do seu pedido e respondemos em até 5 dias (Decreto 7.962/2013, art. 4º). Pedidos sobre seus dados pessoais seguem os prazos da Política de Privacidade.</p>
+<h2>16. Privacidade</h2>
 <p>O tratamento dos seus dados pessoais segue a Política de Privacidade, que faz parte destes Termos.</p>
-<h2>13. Mudanças nestes Termos</h2>
+<h2>17. Mudanças nestes Termos</h2>
 <p>Quando estes Termos mudarem, a nova versão aparece no app e você precisa aceitá-la para continuar usando o LUME. A data da versão em vigor fica no topo deste documento.</p>
-<h2>14. Lei e foro</h2>
+<h2>18. Lei e foro</h2>
 <p>Estes Termos seguem as leis brasileiras. Fica eleito o foro do seu domicílio, como consumidor, para qualquer questão.</p>
-<nav>
+<nav aria-label="Documentos do LUME">
 <a href="termos.html">Termos de Uso</a>
 <a href="privacidade.html">Política de Privacidade</a>
 <a href="aviso-saude.html">Aviso de saúde e precisão</a>
 <a href="suporte.html">Suporte</a>
+<a href="suporte.html#acessibilidade"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="vertical-align:-3px"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M10 7h4v6h4l2 6h-2l-1.6-4H10z M9 10.5A6 6 0 1 0 15.5 19" fill="none" stroke="currentColor" stroke-width="2"/></svg> Acessibilidade</a>
 </nav>
 <p class="version">LUME WEARABLES LTDA · CNPJ 69.685.463/0001-30<br>Rua Samuel Heusi, 463, sala 402, box 651, Centro, Itajaí/SC, CEP 88301-320 · <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> · (47) 98852-3940</p>
 </main>

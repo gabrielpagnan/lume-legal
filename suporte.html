@@ -19,26 +19,43 @@ p, li { color: var(--ink); }
 ul { padding-left: 20px; }
 li { margin: 6px 0; }
 a { color: var(--accent); }
+/* cláusula que limita direito: com destaque, como pede o CDC (art. 54, §4º) */
+.highlight { border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 16px; top: 8px; background: var(--bg); padding: 8px; }
 nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; }
 </style>
 </head>
 <body>
-<main>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<main id="conteudo">
 <a class="brand" href="index.html">LUME</a>
 <h1>Suporte</h1>
-<p class="lead">Dúvidas, problemas com o anel ou a pulseira, assinatura ou seus dados: escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou ligue para (47) 98852-3940.</p>
+<p class="lead">Dúvidas, problemas com o anel ou a pulseira, assinatura ou seus dados: escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou ligue para (47) 98852-3940. Confirmamos o recebimento e respondemos em até 5 dias; pedidos sobre seus dados pessoais têm resposta completa em até 15 dias.</p>
+<h2>Denunciar conteúdo ou pedir a remoção</h2>
+<p>No app, use Denunciar no post, comentário, perfil, mensagem, clube ou evento. Quem não usa o LUME, ou foi atingido por algo publicado lá, pode escrever para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> com o assunto “Denúncia de conteúdo”, informando seu nome, onde está o conteúdo (nome do perfil, clube ou trecho do texto) e por que ele deve ser removido.</p>
+<p><strong>Risco a criança ou adolescente:</strong> no app, marque “Envolve criança ou adolescente” ou escolha “Risco a criança ou adolescente” ao denunciar. Essas denúncias vão para o topo da fila; conteúdo de exploração, abuso ou aliciamento é removido, preservado e comunicado à Polícia Federal. Em perigo imediato, ligue 190.</p>
+<h2>Recorrer de uma remoção</h2>
+<p>Se removermos algo que você publicou ou suspendermos sua conta, avisaremos o motivo. Para pedir revisão, escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> em até 30 dias com o assunto “Recurso de moderação”. Respondemos de forma fundamentada em até 15 dias.</p>
+<h2>Garantia do anel e da pulseira</h2>
+<p>Os aparelhos LUME têm garantia legal de 90 dias contra defeitos, contados da entrega. Escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou ligue para (47) 98852-3940 com o número do pedido e a descrição do problema. Temos até 30 dias para resolver; se não resolvermos, você escolhe entre troca, devolução do valor ou abatimento do preço. Comprou pela internet ou por telefone? Você pode desistir em até 7 dias do recebimento.</p>
 <h2>Excluir a conta e os dados associados</h2>
 <p>No LUME, abra Perfil › Privacidade e dados › Excluir conta. Digite EXCLUIR e confirme novamente com seu método de acesso. Se não conseguir entrar, escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> com o assunto “Excluir minha conta LUME” e informe o e-mail cadastrado; verificaremos a titularidade antes de atender ao pedido. Não envie sua senha por e-mail.</p>
-<p>A exclusão remove o perfil, registros de consentimento, dados de saúde sincronizados, publicações e fotos armazenadas pelo LUME. Os registros locais no aparelho são removidos ao desinstalar o app. Registros de pagamento mantidos pela App Store, Google Play ou RevenueCat e dados exigidos por lei seguem os prazos aplicáveis desses serviços e da legislação. Cópias temporárias em backups dos fornecedores podem persistir pelo prazo operacional deles e não ficam disponíveis no app.</p>
+<p>A exclusão remove o perfil, dados de saúde sincronizados, publicações e fotos armazenadas pelo LUME. Os registros locais no aparelho são removidos ao desinstalar o app. Por obrigação legal, guardamos os registros de acesso (data, hora e IP) por 6 meses e a prova do que você aceitou por 5 anos, com o e-mail só em forma cifrada e irreversível; depois, são apagados. Registros de pagamento mantidos pela App Store, Google Play ou RevenueCat seguem os prazos desses serviços e da lei. Cópias temporárias em backups dos fornecedores podem persistir pelo prazo operacional deles e não ficam disponíveis no app.</p>
 <h2>Excluir somente dados de saúde sincronizados</h2>
 <p>Sem apagar a conta, abra Perfil › Privacidade e dados › Na sua conta › Apagar meus dados de saúde da conta. Os dados que continuam no aparelho não são afetados; para removê-los, desinstale o LUME. Se não conseguir usar o app, solicite a exclusão pelo e-mail <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>, informando o endereço cadastrado para verificarmos a titularidade.</p>
 <h2>Cancelar o LUME Premium</h2>
 <p>Gerencie pelo app, em Perfil › LUME Premium › Gerenciar assinatura, ou nas assinaturas da App Store ou do Google Play, conforme seu aparelho.</p>
-<nav>
+<p>Desistiu em até 7 dias da contratação? Você tem direito à devolução do que pagou. Peça o reembolso à loja em que comprou ou escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a>: confirmamos o recebimento na hora e ajudamos a concluir o pedido com a loja.</p>
+<h2 id="acessibilidade">Acessibilidade</h2>
+<p>Estas páginas seguem as diretrizes internacionais de acessibilidade para a web (WCAG): texto real em vez de imagem, títulos em ordem, contraste nos temas claro e escuro, navegação por teclado e o atalho “Pular para o conteúdo”. Encontrou uma barreira no app ou aqui? Escreva para <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> ou ligue para (47) 98852-3940.</p>
+<nav aria-label="Documentos do LUME">
 <a href="termos.html">Termos de Uso</a>
 <a href="privacidade.html">Política de Privacidade</a>
 <a href="aviso-saude.html">Aviso de saúde e precisão</a>
 <a href="suporte.html">Suporte</a>
+<a href="suporte.html#acessibilidade"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="vertical-align:-3px"><circle cx="12" cy="4" r="2" fill="currentColor"/><path d="M10 7h4v6h4l2 6h-2l-1.6-4H10z M9 10.5A6 6 0 1 0 15.5 19" fill="none" stroke="currentColor" stroke-width="2"/></svg> Acessibilidade</a>
 </nav>
 <p class="version">LUME WEARABLES LTDA · CNPJ 69.685.463/0001-30<br>Rua Samuel Heusi, 463, sala 402, box 651, Centro, Itajaí/SC, CEP 88301-320 · <a href="mailto:contato@lumedevice.com.br">contato@lumedevice.com.br</a> · (47) 98852-3940</p>
 </main>
